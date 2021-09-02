@@ -87,3 +87,82 @@ border-top: 1px solid #0065fc ;
 .bordernav23{
     border-top: 1px solid transparent;
 }
+                    /*HEADER*/
+/*LOCALISATION*/
+.icon-localisation{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+.bordersearch{
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2
+}
+/*Navigation de recherche*/
+.recherche{
+    width: 230px;
+    height: 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.bordernone{
+    border: none;
+}
+.paddingsearch{
+    padding-left: 20px;
+}
+/*Bouton de recherche*/
+.button{
+    width: 120px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/*FILTRES*/
+.filter h3{ 
+    font-size: 20px;
+    display: inline;
+}
+.filter ul{
+display: inline-flex;
+flex-direction: row;
+}
+.filter ul li{
+    display: inline; /*permet l'alignement et enlève les puces de la liste*/
+    margin-left: 25px;
+    font-weight: 600;
+    border: solid 2px #f2f2f2;
+    border-radius: 200px;
+    padding: 0 20px 0 0;
+    }
+    .iconfilter{
+        border: solid 2px #deebff;
+        border-radius: 200px;
+        padding: 15px;
+        margin-right: 15px;
+        color: #0065fc;
+        background-color: #deebff;
+    }
+    /*hover*/
+    .text-hover:hover{
+        color: #0065fc;
+    }
+    .icon-hover:hover{
+        color: white;
+        background-color: #0065fc;
+    }
+   /*POINT INFORMATION*/
+.bordericon-info{
+    border: solid 1px #f2f2f2;
+    border-radius: 25px;
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    }    
