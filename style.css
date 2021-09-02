@@ -1,0 +1,89 @@
+@font-face
+ {
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'
+    );
+    font-family:'raleway',sans-serif ;
+    
+    font-size: medium;
+    font-weight: normal;
+font-style: normal;
+color: black;
+}
+/*GENERAL*/
+.htmlbody{
+    font-family:'raleway';
+}
+.margbody{
+    margin-left: 50px;
+}
+/* FLEXBOX*/
+.flexcentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexaround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexbetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*TEXT*/
+.legend-text{
+    font-weight: bold;
+}
+.margbody{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+/*COLOR*/
+.blue{
+    color: #0065fc;
+}
+.bleuclair{
+    color: #deebff;
+}
+.gris{
+    color:#f2f2f2;
+}
+.backblue{
+    background-color: #0065fc;
+}
+.backbleuclair{
+    background-color: #deebff;
+}
+.backgris{
+    background-color:#f2f2f2;
+}
+/*NAVIGATION DU MENU*/
+.sizeliens{
+    width: 45%; /*de son élément parent soit flexaround=45% de flexbetween*/
+}
+.black{
+    color: black;
+}
+.sizenav{
+    height: 100px;
+}
+/*Alignement du logo*/
+.marglogo{
+    margin-bottom: 7px;
+} 
+/*Bordure du menu*/
+.decorationnone{
+    text-decoration: none;
+}
+.sizeborder{
+    width: 140px;
+    height: 99px;
+}
+.bordernav{
+border-top: 1px solid #0065fc ;
+}
+.bordernav23{
+    border-top: 1px solid transparent;
+}
