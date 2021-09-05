@@ -165,4 +165,44 @@ flex-direction: row;
 .info{
     display: flex;
     align-items: center;
-    }    
+    }  
+    /*HEBERGEMENT*/
+    .galerie-hebergements{
+        flex: 2;
+        height: 650px;
+        padding: 70px 50px;
+        margin-right: 20px;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+    }
+    .galerie-populaires{
+        flex: 1;
+        height: 650px;
+        padding: 70px 50px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+    }
+/*Les hébergeemnts*/
+.img-hebergements{
+    width: 300px;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
+.borderpictures{
+    border: solid 2px white;
+    border-radius: 15px;
+    background-color:white;
+    width: 302px;
+    height: 180px;  
+}
+.pictures{
+    display:flex; 
+    justify-content: space-around;
+}
+.bloc1{
+    margin-bottom: 50px;
+}
+.bloc2{
+    margin-top: 100px;
+}  
