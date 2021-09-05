@@ -206,3 +206,41 @@ flex-direction: row;
 .bloc2{
     margin-top: 100px;
 }  
+/*Les plus populaires*/
+.iconpop{
+    margin-left: 300px;
+}
+
+.img-populaires{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px 0 0 15px;
+    padding-right: 30px;
+}
+.borderpictures-populaires{
+    border: solid 2px white;
+    border-radius: 15px;
+    width: 450px;
+    height: 152px;
+    background-color: white;
+    display: flex;
+    margin-bottom: 50px;
+}
+/*STARS*/
+
+.bluestars{
+    color: #0065fc;
+}
+.starnone{
+    color:#f2f2f2 ;
+}
+.stars5{
+    margin-top: 90px;
+}
+.stars4{
+    margin-top: 75px;
+}
+/*Légende des hôtels*/
+.afficher{
+    margin-top: 70px;
+}
