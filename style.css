@@ -306,3 +306,17 @@ flex-direction: row;
 .map-hover:hover{
     cursor: pointer;
 }
+/*FOOTER*/
+.border-footer{
+    border: solid 2px #f2f2f2;
+    height: 300px;
+    background-color: #f2f2f2;
+}
+.margfooter{
+    padding-right: 30%;
+}
+.li-footer{
+    padding-bottom: 10px;
+    list-style-type: none;
+    padding-right: 400px;
+}
