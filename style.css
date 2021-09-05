@@ -302,3 +302,7 @@ flex-direction: row;
     border-radius: 15px 15px 0 0;
     margin-right: 50px;
 }
+/*HOVER*/
+.map-hover:hover{
+    cursor: pointer;
+}
