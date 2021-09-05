@@ -244,3 +244,61 @@ flex-direction: row;
 .afficher{
     margin-top: 70px;
 }
+/*ACTIVITES*/
+.activiy{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.galerie-activity{
+    width: 95%;
+    height: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.border-activity{
+    border: solid 1px white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.legend-activity{
+    padding-left: 15px;
+}
+.flex-activity{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Photos Activités*/
+.picture-port{
+    width: 300px;
+    height: 500px;
+    border-radius: 15px 15px 0 0;
+}
+.picture-fort{
+    width: 400px;
+    height:230px ;
+    border-radius: 15px 15px 0 0;
+}
+.picture-iles{
+    width: 400px;
+    height: 230px;
+    border-radius: 15px 15px 0 0;
+}
+.picture-parcnat{
+    width:300px ;
+    height:500px;
+    border-radius: 15px 15px 0 0;
+}
+.picture-dame{
+    width: 400px;
+    height: 230px;
+    border-radius: 15px 15px 0 0;
+}
+.picture-longchamp{
+    width: 400px;
+    height: 230px;
+    border-radius: 15px 15px 0 0;
+    margin-right: 50px;
+}
