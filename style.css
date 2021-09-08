@@ -14,6 +14,7 @@ color: black;
     font-family:'raleway';
 }
 .margbody{
+    margin-right: 50px;
     margin-left: 50px;
 }
 /* FLEXBOX*/
@@ -36,10 +37,6 @@ color: black;
 .legend-text{
     font-weight: bold;
 }
-.margbody{
-    margin-right: 50px;
-    margin-left: 50px;
-}
 /*COLOR*/
 .blue{
     color: #0065fc;
@@ -60,32 +57,38 @@ color: black;
     background-color:#f2f2f2;
 }
 /*NAVIGATION DU MENU*/
-.sizeliens{
-    width: 45%; /*de son élément parent soit flexaround=45% de flexbetween*/
+.size-liens{
+    width: 100%; /*de son élément parent soit flexaround=45% de flexbetween*/
 }
 .black{
     color: black;
 }
-.sizenav{
+.size-nav{
     height: 100px;
 }
 /*Alignement du logo*/
-.marglogo{
+.marg-logo{
     margin-bottom: 7px;
 } 
 /*Bordure du menu*/
-.decorationnone{
+.decoration-none{
     text-decoration: none;
 }
-.sizeborder{
+.size-border{
     width: 140px;
     height: 99px;
 }
-.bordernav{
-border-top: 1px solid #0065fc ;
+.border-nav{
+border-top: solid 1px #0065fc ;
 }
-.bordernav23{
+.border-nav23{
     border-top: 1px solid transparent;
+    margin-right: 60px;
+}
+/*Hover*/
+.border-nav-hover:hover{
+    border-top: solid 1px #0065fc;
+    cursor: pointer;
 }
                     /*HEADER*/
 /*LOCALISATION*/
@@ -302,7 +305,7 @@ flex-direction: row;
     border-radius: 15px 15px 0 0;
     margin-right: 50px;
 }
-/*HOVER*/
+/*Hover*/
 .map-hover:hover{
     cursor: pointer;
 }
@@ -311,6 +314,7 @@ flex-direction: row;
     border: solid 2px #f2f2f2;
     height: 300px;
     background-color: #f2f2f2;
+    width: 100%;
 }
 .margfooter{
     display: flex;
@@ -321,3 +325,48 @@ flex-direction: row;
     list-style-type: none;
     padding-right: 380px;
 }
+
+/* QUELQUES REGLES PAR DEFAUT MEDIA QUERY*/
+
+@media screen and (max-width : 1600px){
+    .margbody{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .sizeliens{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .filter{
+        display: inline;
+    }
+    .filter ul li {
+        display: inline;
+        margin-left: 10px;
+        font-weight: 300px;
+        padding: 0 10px 0 0;
+    }
+
+    .border-footer{
+        border: solid 1px #f2f2f2;
+        background-color: #f2f2f2;
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 365px) {
+    .bloc.page{
+        display: block;
+        flex-direction: column;
+    }
+    .filter ul{
+        display: block;
+        flex-direction: column;
+    }
+    .li-footer{
+        display: block;
+        flex-direction: column;
+    }
+
+}
+    
