@@ -106,17 +106,17 @@ border-top: solid 1px #0065fc ;
     border: 0.5px solid #f2f2f2
 }
 /*Navigation de recherche*/
-.recherche{
+.text-search{
     width: 230px;
     height: 50px;
     font-size: 18px;
     color: black;
     font-weight: bold;
 }
-.bordernone{
+.border-none{
     border: none;
 }
-.paddingsearch{
+.padding-search{
     padding-left: 20px;
 }
 /*Bouton de recherche*/
@@ -152,7 +152,7 @@ flex-direction: row;
         color: #0065fc;
         background-color: #deebff;
     }
-    /*hover*/
+/*hover*/
     .text-hover:hover{
         color: #0065fc;
     }
@@ -160,7 +160,7 @@ flex-direction: row;
         color: white;
         background-color: #0065fc;
     }
-   /*POINT INFORMATION*/
+/*POINT INFORMATION*/
 .bordericon-info{
     border: solid 1px #f2f2f2;
     border-radius: 25px;
@@ -172,7 +172,7 @@ flex-direction: row;
     display: flex;
     align-items: center;
     }  
-    /*SECTION 2*/
+/*SECTION 2*/
     .galerie-hebergements{
         flex: 2;
         height: 650px;
@@ -241,7 +241,7 @@ flex-direction: row;
     color:#f2f2f2 ;
 }
 .stars5{
-    margin-top: 75px;
+    margin-top: 90px;
 }
 .stars4{
     margin-top: 75px;
@@ -309,21 +309,24 @@ flex-direction: row;
 .footer{
     width: 100%;
     background: #f2f2f2;
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    
 }
 .blocks-footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width:px;
 }
+    
 .footer-block{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding-left: 100px;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+    padding-right: 300px;
+    
 }
 
     /* QUELQUES REGLES PAR DEFAUT MEDIA QUERY*/
@@ -461,7 +464,7 @@ flex-direction: row;
     }
 
 /*SECTION 2*/
-.galerie-hebergements{
+    .galerie-hebergements{
     flex: 50%;
     padding-right: 20px;
      }
@@ -527,13 +530,13 @@ flex-direction: row;
     padding-right: 20px;
      }
     .galerie-populaires{
-    flex: 20%;
-    padding-left: 10px;
-    padding-right: 15px;
-    margin-right: 2px;
+     flex: 20%;
+     padding-left: 10px;
+     padding-right: 15px;
+     margin-right: 2px;
      }
      .borderpictures-populaires{
-    width: 400px;
+     width: 400px;
      }
 /*SECTION 3*/
     .flex-activity{
@@ -565,11 +568,11 @@ flex-direction: row;
     }
      .title{
          white-space: nowrap;
-     }
+    }
      .filter ul{
          display: inline;
          align-items: baseline;   
-     }
+    }
     .filter ul li{ /*les filtres ne restent pas alignés*/
         display: inline;
         flex-shrink: initial;
@@ -623,7 +626,7 @@ flex-direction: row;
         width: 100%;
      }
 }
-}
+
 /*MOBILE*/
  @media screen and (max-width:375px) {
 
@@ -643,9 +646,7 @@ flex-direction: row;
     display: block;
      }
      /*comment placer les é liens en colonnes*/
-    a [href="Activités S'inscrire"]{
-        flex-direction: column;
-    }
+    
     /*section 1*/
      .title { /*Aller à la ligne au mot Hébergement*/
      flex-wrap: wrap;
@@ -660,43 +661,47 @@ flex-direction: row;
     
     .filter ul {
      display: block;
-     
+     }
+     .li-a{
+         display: inline-flex;
+     }
+     .li-b{
+         display: inline-flex;
      }
    /*Information*/
    .info{
        font-size: large;
-   }
+    }
   /*SECTION 2*/
      section2{
      display: flex;
      flex-direction: column-reverse;
-   }
+    }
    /*LES PLUS POPULAIRES*/
-   .galerie-populaires{
+    .galerie-populaires{
        flex: 0%;
        width: 375px;
        height: auto;
        margin-left: 0;
        padding: 2px 1px;
-   }
-   .borderpictures-populaires{
+    }
+    .borderpictures-populaires{
        width: 360px;
        height:180px ;
-   }
-
- 
+    }
  /*HEBERGEMENTS*/
- .galerie-hebergements{
+    .galerie-hebergements{
      flex:0;
      width: 375px;
      height: auto;
      padding: 2px 1px;
      margin: 2px 0;
      background-color: white;
- }
+    }
     .bloc1 {
      display: block;
      flex-direction: column;
+     align-items: center;
     }
     .bloc2{
         display: block;
@@ -719,7 +724,7 @@ flex-direction: row;
     flex-direction: column;
     justify-content: space-around;
     }
-    /* SECTION 3 : ACTIVITES*/
+/* SECTION 3 : ACTIVITES*/
       .galerie-activity{
     display:block;
     flex-direction: column;
@@ -754,7 +759,7 @@ flex-direction: row;
         height: 200px;
         border-radius: 15px 15px 0 0;
     }
-     /*FOOTER*/
+/*FOOTER*/
      .blocks-footer{
     display: block;
     flex-direction: column;
