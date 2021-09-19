@@ -13,9 +13,12 @@ color: black;
 .htmlbody{
     font-family:'raleway';
 }
+body{
+    width: 1450px;
+}
 .marg-body{
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-left: 125px;
+    margin-right: 125px;
 }
 /* FLEXBOX*/
 .flexcentre{
@@ -68,6 +71,7 @@ color: black;
     color: black;
 }
 .size-nav{
+    width: 1200px;
     height: 100px;
 }
 /*Alignement du logo*/
@@ -133,33 +137,33 @@ border-top: solid 1px #0065fc ;
     display: inline;
 }
 .filter ul{
-display: inline-flex;
-flex-direction: row;
+    display: inline-flex;
+    flex-direction: row;
 }
 .filter ul li{
     display: inline; /*permet l'alignement et enlève les puces de la liste*/
-    margin-left: 25px;
+    margin-left: 5px;
     font-weight: 600;
     border: solid 2px #f2f2f2;
-    border-radius: 200px;
+    border-radius: 150px;
     padding: 0 20px 0 0;
-    }
-    .icon-filter{
-        border: solid 2px #deebff;
-        border-radius: 200px;
-        padding: 15px;
-        margin-right: 15px;
-        color: #0065fc;
-        background-color: #deebff;
-    }
+}
+.icon-filter{
+    border: solid 2px #deebff;
+    border-radius: 150px;
+    padding: 15px;
+    margin-right: 15px;
+    color: #0065fc;
+    background-color: #deebff;
+}
 /*hover*/
-    .text-hover:hover{
-        color: #0065fc;
-    }
-    .icon-hover:hover{
-        color: white;
-        background-color: #0065fc;
-    }
+.text-hover:hover{
+    color: #0065fc;
+}
+.icon-hover:hover{
+    color: white;
+    background-color: #0065fc;
+}
 /*POINT INFORMATION*/
 .bordericon-info{
     border: solid 1px #f2f2f2;
@@ -171,66 +175,83 @@ flex-direction: row;
 .info{
     display: flex;
     align-items: center;
-    }  
-/*SECTION 2*/
-    .galerie-hebergements{
-        flex: 2;
-        height: 650px;
-        padding: 70px 50px;
-        margin-right: 20px;
+}  
+/*SECTION 1*/
+    article{
+        width: 800px;
+        height: 550px;
+        padding: 20px 20px;
+        margin-right: 10px;
         border-radius: 10px;
         background-color: #f2f2f2;
     }
-    .galerie-populaires{
-        flex: 1;
-        height: 650px;
-        padding: 70px 50px;
-        margin-left: 20px;
+    aside{
+        width: 390px;
+        height: 550px;
+        padding: 20px 20px;
+        margin-left: 10px;
         border-radius: 10px;
         background-color: #f2f2f2;
     }
-/*Les hébergeemnts*/
+/*LES HEBERGEMENTS*/
 .img-hebergements{
-    width: 300px;
-    height: 120px;
+    width: 240px;
+    height: 125px;
     border-radius: 15px 15px 0 0;
 }
-.borderpictures{
+.border-hebergements{
     border: solid 2px white;
     border-radius: 15px;
     background-color:white;
-    width: 302px;
-    height: 180px;  
-    margin: 0 15px;
+    width: 242px;
+    height: 192px;  
+    margin: 0 5px;
 }
-.pictures{
+.hebergements{
     display:flex; 
     justify-content: space-around;
+    
 }
 .bloc1{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .bloc2{
-    margin-top: 100px;
+    margin-bottom: 30px;
 }  
-/*Les plus populaires*/
+/*Légende des hôtels*/
+.legend-hebergements{
+    padding-left:15px ;
+}
+.afficher{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+/*LES PLUS POPULAIRES*/
 .iconpop{
-    margin-left: 300px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 150px;
 }
 .img-populaires{
-    width: 200px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 15px 0 0 15px;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 .borderpictures-populaires{
     border: solid 2px white;
     border-radius: 15px;
-    width: 450px;
-    height: 152px;
+    width: 332px;
+    height: 132px;
     background-color: white;
     display: flex;
-    margin-bottom:50px ;
+    margin-bottom: 30px;
+}
+.stars5-pop{
+    margin-top: 80px ;
+}
+.stars4-pop{
+    margin-top: 85px;
 }
 /*STARS*/
 
@@ -241,21 +262,16 @@ flex-direction: row;
     color:#f2f2f2 ;
 }
 .stars5{
-    margin-top: 90px;
+    margin-top: 70px ;
 }
 .stars4{
-    margin-top: 75px;
+    margin-top: 50px;
 }
-/*Légende des hôtels*/
-.afficher{
-    margin-top: 70px;
-}
-/* SECTION 3 ACTIVITES*/
-.activiy{
-    margin: 50px;
-}
+
+/* SECTION 2 ACTIVITES*/
+
 .galerie-activity{
-    height: 600px;
+    height: 550px;
 }
 .border-activity{
     border: solid 1px white;
@@ -266,39 +282,40 @@ flex-direction: row;
     padding-left: 15px;
 }
 .flex-activity{
-    display:flex;
+    display:block;
     justify-content: center;
     flex-direction: column;
+    margin: 20px 10px;
 }
 /*Photos Activités*/
 .picture-port{
-    width: 300px;
-    height: 500px;
+    width: 280px;
+    height: 450px;
     border-radius: 15px 15px 0 0;
 }
 .picture-fort{
-    width: 400px;
-    height:220px ;
+    width: 280px;
+    height:240px ;
     border-radius: 15px 15px 0 0;
 }
 .picture-iles{
-    width: 400px;
-    height: 220px;
+    width: 280px;
+    height: 140px;
     border-radius: 15px 15px 0 0;
 }
 .picture-parcnat{
-    width:300px ;
-    height:500px;
+    width:280px ;
+    height:450px;
     border-radius: 15px 15px 0 0;
 }
 .picture-dame{
-    width: 400px;
-    height: 220px;
+    width: 280px;
+    height: 190px;
     border-radius: 15px 15px 0 0;
-}
+    }
 .picture-longchamp{
-    width: 400px;
-    height: 220px;
+    width: 280px;
+    height: 190px;
     border-radius: 15px 15px 0 0;
 }
 /*Hover*/
@@ -307,11 +324,13 @@ flex-direction: row;
 }
 /*FOOTER*/
 .footer{
-    width: 100%;
+    width: 1450px;
+    height: 300px;
     background: #f2f2f2;
     background-size: cover;
     display: flex;
     justify-content: flex-start;
+    margin-top: 30px;
     
 }
 .blocks-footer{
@@ -325,131 +344,14 @@ flex-direction: row;
     padding-left: 100px;
     padding-top: 100px ;
     padding-bottom: 100px;
-    padding-right: 300px;
-    
+    padding-right: 150px;   
 }
 
     /* QUELQUES REGLES PAR DEFAUT MEDIA QUERY*/
+@media screen and (max-width: 1450) {
+/*HEADER*/
 
-@media screen and (max-width:1800px){
-/*HEADER*/
-    .marg-body{
-        margin: 0 50px;
-    }
-    nav{
-        width: 95%;
-    }
-    .size-liens{
-        width: 100%;
-    }
-    /*main*/
-    main{
-        width: 95%;
-    }
-   
-/*SECTION 2* HEBERGEMENTS*/
-    .galerie-hebergements{
-        flex: 40%;
-    }
-    .galerie-populaires{
-        flex: 20%;
-    }
-    /*les plus populaires*/
-    .iconpop{
-        margin-bottom: 60px;
-        margin-left:210px ;
-    }
-/* SECTION 3 ACTIVITES*/
-    .galerie-activity{
-        padding: 0 30px;
-    }
-}
-/*FOOTER*/
-   
-@media screen and (max-width:1700px ) {
-/*HEADER*/
-    .marg-body{
-        margin: 0 50px;
-    }
-    nav{
-        width: 95%;
-    }
-    .size-liens{
-        width:105% ;
-    }
-    main{
-        width: 85%;
-    }
-/*SECTION 2 HEBERGEMENTS*/
-    .galerie-hebergements{
-        flex: 50%;
-    }
-    .galerie-populaires{
-        flex: 50%;   
-        padding-right: 15px;
-    }
-    .borderpictures-populaires{
-        width: 400px;
-    }
-    .iconpop{
-        margin: 0 0 30px 150px;
-    }
-    .stars5{
-        margin-top: 90px
-    }
-/* SECTION 3 ACTIVITES*/
-    .flex-activity{
-        padding: 0 40px;
-    }
- /*FOOTER*/
-    .border-footer{
-        border: solid 2px #f2f2f2;
-        height: 270px;
-        background-color: #f2f2f2;
-        width: 100%;
-        }
-}
-        
-@media screen and (max-width: 1600px){
-/*HEADER*/
-    .marg-body{
-        margin: 0 30px;
-    }
-    nav{
-        width: 80% ;
-    }
-    .size-liens{
-        width: 105%;
-    }
-    main{
-        width: 80%;
-    }
-/*SECTION 2*/
-    .galerie-hebergements{
-        flex: 50%;
-    }
-    .galerie-populaires{
-        flex: 50%;
-    }
-/*SECTION 3 ACTIVITES*/
-    .flex-activity{
-        padding: 0 40px;
-    }
-}  
-@media screen and (max-width: 1500px) {
-/*HEADER*/
-    .marg-body{
-        margin: 0 40px;
-    }
-    .size-liens{
-        width: 115% ;
-        }
-     nav{
-    width: 80%;
-    }
-    main{
-    width: 80%;
-    }
+
 
 /*SECTION 1*/
     .title{
@@ -463,40 +365,32 @@ flex-direction: row;
         margin-right: 0;
     }
 
-/*SECTION 2*/
-    .galerie-hebergements{
-    flex: 50%;
-    padding-right: 20px;
-     }
-    .galerie-populaires{
-    flex: 50%;
-    padding-left: 10px;
-    padding-right: 15px;
-    margin-right: 2px;
+    /*SECTION 2*/
+    article{
+        display: flex;
+        height: 650px;
+        padding: px px;
+        margin-right: 10px;
+        border-radius: 10px;
+        background: #f2f2f2;
     }
-     .borderpictures-populaires{
-    width:400px;
+    aside{
+        display: flex;
+        height: 650px;
+        padding: px px;
+        margin-left: px;
+        border-radius: 10px;
+        background: #f2f2f2;
     }
-/*SECTION 3*/
+    
+    /*SECTION 3*/
      .flex-activity{
     padding: 0 30px;
-   }
+     }
 }
 /*FOOTER*/
 @media screen and(max-xidth:1366px) {
-    /*HEADER*/
-    .marg-body{
-        margin: 0 20px;
-    }
-    .size-liens{
-        width: 100% ;
-        }
-     nav{
-    width: 70%;
-    }
-    main{
-    width: 70%;
-    }
+   
 @media screen and (max-width: 1320px) {
     /*header*/
     .marg-body{
@@ -524,7 +418,7 @@ flex-direction: row;
         display: inline;
         margin-right: 0;
     }
-/*SECTION 2*/
+/*SECTION 1*/
      .galerie-hebergements{
     flex: 30%;
     padding-right: 20px;
@@ -538,7 +432,7 @@ flex-direction: row;
      .borderpictures-populaires{
      width: 400px;
      }
-/*SECTION 3*/
+/*SECTION 2*/
     .flex-activity{
     padding: 0 15px;
     }
@@ -549,18 +443,15 @@ flex-direction: row;
  @media screen and (max-width:1200px){
      
 /* HEADER*/
+
+    
      .marg-body{
          margin: 0 20px; 
      } 
      .size-liens{
          width: 130%;
      }
-    nav{
-        width: 70%;
-    }
-    main{
-        width: 70%;
-    }
+    
       /*SECTION 1*/
       .h3{
         font-size: 20px;
@@ -669,7 +560,7 @@ flex-direction: row;
          display: inline-flex;
      }
    /*Information*/
-   .info{
+    .info{
        font-size: large;
     }
   /*SECTION 2*/
@@ -729,7 +620,7 @@ flex-direction: row;
     display:block;
     flex-direction: column;
     }
-    .picture-port{
+    .picture-hight{
         width: 370px;
         height: 200px;
         border-radius: 15px 15px 0 0;

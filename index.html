@@ -17,10 +17,9 @@
     <title>Reservia</title>
 </head>
 
-<body">
+<body>
 
-    <header class="marg-body">
-        <nav class="flexbetween size-nav size-liens">
+        <nav class=" marg-body flexbetween size-nav size-liens">
             <div>
                 <div>
                     <img class="marg-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia" width="120px"
@@ -29,26 +28,26 @@
             </div>
             <div class="flexaround">
                 <div class="size-border flexcentre border-nav-hover"><a class="blue decoration-none"
-                        href="#section2">Hébergements</a>
+                        href="#section1">Hébergements</a>
                 </div>
                 <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="black decoration-none"
-                        href="#section3">Activités</a>
+                        href="#section2">Activités</a>
                 </div>
                 <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="blue decoration-none"
                         href="#">S'inscrire</a>
                 </div>
             </div>
         </nav>
-    </header>
+    
     <main class="marg-body">
-        <section1>
+        <header>
             <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <div class="flexcentre bordersearch">
 
                 <div class="backgris flexcentre icon-localisation"><i class="fas fa-map-marker-alt"></i></div>
-                <div><input class="recherche flexcentre bordernone paddingsearch" type="search"
+                <div><input class="text-search flexcentre border-none padding-search" type="search"
                         value="Marseille, France" />
                 </div>
                 <div class="backblue flexcentre button">Rechercher</div>
@@ -57,16 +56,16 @@
             <div class="filter">
                 <h3>Filtres</h3>
                 <ul class="filter ul">
-                        <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
+                        <li class="filter li text-hover li-a"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
                             <h3>Economique</h3>
                         </li>
-                        <li class="filter li text-hover"><i class="fas fa-child icon-filter icon-hover"></i>
+                        <li class="filter li text-hover li-b"><i class="fas fa-child icon-filter icon-hover"></i>
                             <h3>Familial</h3>
                         </li>
-                        <li class="filter li text-hover"><i class="fas fa-heart icon-filter icon-hover"></i>
+                        <li class="filter li text-hover li-c"><i class="fas fa-heart icon-filter icon-hover"></i>
                             <h3 class="filter-text">Romantique</h3>
                         </li>
-                        <li class="filter li text-hover"><i class="fas fa-dog icon-filter icon-hover"></i>
+                        <li class="filter li text-hover li-d"><i class="fas fa-dog icon-filter icon-hover"></i>
                             <h3>Animaux autorisés</h3>
                         </li>
                 </ul>
@@ -78,17 +77,18 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
-        </section1>
-        <section2 class="flexbetween map-hover" id="section2">
+        </header>
+
+        <section1 class="map-hover flexbetween" id="section1">
             <!--ancre_ Hébergements-->
 
-            <div class="galerie-hebergements">
+            <article class="galerie-hebergements">
                 <p>
-                <h3 id="Hébergements">Hébergements à Marseille</h3>
+                <h3 id="Hébergements" class="legend-hebergements">Hébergements à Marseille</h3>
                 </p>
 
-                <div class="pictures bloc1">
-                    <div class="borderpictures">
+                <div class="hebergements bloc1">
+                    <div class="border-hebergements">
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="photo hébergement 1" />
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="borderpictures">
+                    <div class="border-hebergements">
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             alt="photo hébergement 2" />
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="borderpictures">
+                    <div class="border-hebergements">
                         <img class="img-hebergements" src="src/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                             alt="photo hébergement 3" />
                         <div>
@@ -137,8 +137,8 @@
                     </div>
                 </div>
 
-                <div class="pictures bloc2">
-                    <div class="borderpictures">
+                <div class="hebergements bloc2">
+                    <div class="border-hebergements">
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                             alt="photo hébergement 4" />
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="borderpictures">
+                    <div class="border-hebergements">
                         <img class="img-hebergements" src="src/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                             alt="photo hébergement 5" />
                         <div>
@@ -169,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="borderpictures">
+                    <div class="border-hebergements">
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                             alt="photo hébergement 6" />
@@ -190,8 +190,8 @@
                 <div class="textlegend afficher">
                     <p class="legend-text">Afficher plus </p>
                 </div>
-            </div>
-            <div class="galerie-populaires">
+            </article>
+            <aside class="galerie-populaires">
                 <p>
                 <h3>Les plus populaires<i class="fas fa-chart-line iconpop"></i>
                 </h3>
@@ -251,9 +251,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section2>
-        <section3 class="activity map-hover" id="section3">
+            </aside>
+        </section1>
+        <section2 class="activity map-hover" id="section2">
             <!--ancre-->
             <h2 id="Activités">Activités à Marseille</h2>
             <div class="galerie-activity flexbetween">
@@ -314,7 +314,7 @@
                     </div>
                 </div>
             </div>
-        </section3>
+        </section2>
     </main>
     <footer class="footer">
         <div class="blocks-footer">
