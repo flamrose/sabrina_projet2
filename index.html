@@ -19,26 +19,25 @@
 
 <body>
 
-        <nav class=" marg-body flexbetween size-nav size-liens">
-            <div>
-                <div>
-                    <img class="marg-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia" width="120px"
-                        height="50px">
-                </div>
+    <nav class=" marg-body flexbetween size-nav size-liens">
+        <div>
+            <img class="marg-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia" width="120px" height="50px">
+        </div>
+        <div class="flexaround">
+            <div class="size-border flexcentre border-nav-hover"><a class="blue decoration-none lien-1 mob-line"
+                    href="#section1">Hébergements</a>
             </div>
-            <div class="flexaround">
-                <div class="size-border flexcentre border-nav-hover"><a class="blue decoration-none"
-                        href="#section1">Hébergements</a>
-                </div>
-                <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="black decoration-none"
-                        href="#section2">Activités</a>
-                </div>
-                <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="blue decoration-none"
-                        href="#">S'inscrire</a>
-                </div>
+            <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="black decoration-none lien-2 mob-line"
+                    href="#section2">Activités</a>
             </div>
-        </nav>
-    
+
+            <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="blue decoration-none lien-3"
+                    href="#">S'inscrire</a>
+            </div>
+        </div>
+
+    </nav>
+
     <main class="marg-body">
         <header>
             <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -50,31 +49,32 @@
                 <div><input class="text-search flexcentre border-none padding-search" type="search"
                         value="Marseille, France" />
                 </div>
-                <div class="backblue flexcentre button">Rechercher</div>
+                <div class="backblue flexcentre button"><span class="word-none">Rechercher</span> <span><i class="fas fa-search icon-search"></i></span></div>
             </div>
 
             <div class="filter">
                 <h3>Filtres</h3>
-                <ul class="filter ul">
-                        <li class="filter li text-hover li-a"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
-                            <h3>Economique</h3>
-                        </li>
-                        <li class="filter li text-hover li-b"><i class="fas fa-child icon-filter icon-hover"></i>
-                            <h3>Familial</h3>
-                        </li>
-                        <li class="filter li text-hover li-c"><i class="fas fa-heart icon-filter icon-hover"></i>
-                            <h3 class="filter-text">Romantique</h3>
-                        </li>
-                        <li class="filter li text-hover li-d"><i class="fas fa-dog icon-filter icon-hover"></i>
-                            <h3>Animaux autorisés</h3>
-                        </li>
+                <ul class="filter ul ">
+                    <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
+                        <h3>Economique</h3>
+                    </li>
+                    <li class="filter li text-hover"><i class="fas fa-child icon-filter icon-hover"></i>
+                        <h3>Familial</h3>
+                    </li>
+
+                    <li class="filter li text-hover"><i class="fas fa-heart icon-filter icon-hover icon-animal"></i>
+                        <h3 class="filter-text">Romantique</h3>
+                    </li>
+                    <li class="filter li text-hover"><i class="fas fa-dog icon-filter icon-hover"></i>
+                        <h3>Animaux autorisés</h3>
+                    </li>
                 </ul>
             </div>
 
             <div class="info">
                 <div class="bordericon-info"><i class="fas fa-info fa-xs blue flexcentre"></i></div>
                 <div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <p>Plus de 500 logements sont <span class="wrap">disponibles</span> dans cette ville</p>
                 </div>
             </div>
         </header>
