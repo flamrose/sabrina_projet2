@@ -1114,18 +1114,22 @@ h3{
 }
 @media screen and (max-width : 450px){
     .html-body{
-        font-size: medium;
+        font-size: large;
     }
     body{
         width: 450px;
         height: auto;
-        margin-left: 0px;
+        margin-left: 0;
+    }
+    .wrap{
+        display: flex;
+        white-space: pre-wrap; 
     }
     /*NAVIGATION DU MENU*/
     
     /*Logo*/
     .marg-logo{
-        margin: 0 5px;
+        margin: 0 0;
     }
     .size-logo{
         width: 90px;
@@ -1135,30 +1139,52 @@ h3{
     .size-nav{
         width: 450px;
         height: auto;
-        border-bottom: #f2f2f2 solid 2px;
     }
     .size-liens{
         display: block;
-        width: 180px;    
+          
     }
     .lien-1{
-        margin-left: 50px;
-        margin-top: 0px;
+        margin-left: 20px;
+        margin-top: 0;
     }
     .lien-2{
-        margin-top: 0px;
-        margin-left: 350px; 
+        margin-top: 0;
+        margin-left: 140px; 
     }
     .lien-3{
-       margin-bottom: 70px;
-       margin-right: 0px;
-       margin-left:300px ;
+       margin-bottom: 100px;
+       margin-right: 0;
+       margin-left:0px ;
        font-weight: bold;
     }
     /*bordures mobile*/
-    .size-border
-    .border-nav
-    .border-nav23
+    .size-border{
+        display: flex;
+        width: 120px;
+        height: 35px;
+    }
+    .border-nav{
+        border-top:transparent solid 2px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .border-nav23{
+        display: flex;
+        flex-direction: row-reverse; 
+    }
+    /*HOVER*/
+    .border-nav-hover:hover{
+        border-top: transparent solid 2px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .line-mob{
+        border-bottom: #f2f2f2 solid 2px;
+    }
+    .line-mob-hover:hover{
+        border-bottom: #0065fc solid 2px;
+    }
         
     
     /*Ligne horizontale*/
@@ -1167,11 +1193,11 @@ h3{
     header{   
     width: 450px;
     height: auto;
+    margin-right: 15px;
      }
-     .title {
-        font-size: 18px;
+     h1 {
+        font-size: 28px;
         font-weight: bold;
-        flex-wrap: wrap;
      }
      p {
      white-space: nowrap;
@@ -1184,14 +1210,14 @@ h3{
      }
    /*NAVIGATION DE RECHERCHE*/
    .bordersearch{
-       width: 300px;
+       width: 370px;
        border-radius: 10px;
        border: 0.5px solid #f2f2f2;   
     }
     .text-search{
-       width: 200px;
+       width: 270px;
        height: 50px;
-       font-size: 18px;
+       font-size: 22px;
        color: black;
        font-weight: bold;
     }
@@ -1211,20 +1237,20 @@ h3{
        padding-right: 15px;  
     }
   /*FILTRES*/
-  .filter{
+    .filter{
       width: 450px;
       height: auto;
     }
       /* bordure des filtres*/  
-   .filter h3 {
-       font-size: 18px;
+    .filter h3 {
+       font-size: 24px;
        display: inline-block;
        flex-direction:column;
        align-items: flex-start;
        margin-bottom:0px ;
     }
    .filter ul{
-       display: block;
+       display: inline-block;
        flex-direction: column;
        align-items: flex-start;
        padding-inline-start: 0;/*annule la marge de inline-flex*/
@@ -1235,20 +1261,20 @@ h3{
        display: inline-block; /*annule 'inline'en 1200px*/
     }
     .filter li {
-        display: block;
+        display: inline-block;
         flex-direction: column;
         align-items: flex-start;
-        margin: 10px 0px;
-        font-weight: 500;
+        margin: 10px 5px;
+        font-weight: 600;
         border: solid 2px #f2f2f2;
         border-radius: 100px;
-        padding: 0 5px 0 0;  
+        padding: 0 10px 0 0;  
     }
     .icon-filter{
        border: solid 2px #deebff;
        border-radius: 100px;
        padding: 15px;
-       margin-right: 3px;
+       margin-right: 10px;
        color: #0065fc;
        background-color: #deebff;
     }
@@ -1265,7 +1291,9 @@ h3{
        margin-bottom: 20px;
     }
     .wrap{
-       white-space: pre-wrap;
+        display: flex;
+        white-space: pre-wrap;
+       
     }
  /*SECTION 1*/
     .size-section1{
@@ -1291,30 +1319,35 @@ h3{
     border-radius: 10px;
     background-color: #f2f2f2;
     background-size: cover;
-    padding-left: 20px;
-    margin-left: 0px;
+    padding-left: 90px;
     margin-right: 0px;
-
     }
   /*LES PLUS POPULAIRES*/
     .img-populaires{
-       width: 120px;
+       width: 140px;
        height: 128px;
        border-radius: 15px 0 0 15px;
-       padding-right: 10px;
+       padding-right: 20px;
     } 
     .border-populaires{
-      width: 332px;
+      width: 352px;
       height:130px ;
       margin-top: 10px ;
       margin-bottom: 10px;
-      margin-left: 30px;/*pour centrer*/
+      margin-left: 10px;/*pour centrer*/
+    }
+    .h2-pop{
+        font-size: 26px;
+        margin-left: 20px;
+    }
+    .icon-pop{
+        margin-right: 25px;
     }
     .stars5-pop{
-        margin-top: 70px ;
+        margin-top: 50px ;
     }
     .stars4-pop{
-        margin-top: 50px;
+        margin-top: 30px;
     }
 /*HEBERGEMENTS*/
     .hebergements{
@@ -1323,18 +1356,18 @@ h3{
     }
     .galerie-hebergements{
     padding: 5px 5px;
-    margin-left: 30px;/*centrer*/
+    margin-left: 100px;/* Pour centrer*/
     margin-bottom: 10px;
     }
    .img-hebergements{
-   width: 330px;
+   width: 350px;
    height: 120px;
    }
    .border-hebergements{
    border: solid 4px white;
    border-radius: 15px;
    box-shadow: 5px 5px 5px 5px white;
-   width: 332px;
+   width: 352px;
    height: 200px;  
    margin-top: 10px;
    margin-bottom: 10px;
@@ -1350,10 +1383,10 @@ h3{
         margin-top: 0px;
         font-size: 20px;
     }
-    h2{
-       font-size: 22px;
+    .h2-hebergements{
+       font-size: 26px;
        font-weight: bold;
-       margin-left: 20px;
+       margin-left: 0;
     }
 /* SECTION 2 : ACTIVITES*/
     .galerie-activity{
@@ -1370,8 +1403,12 @@ h3{
     .marg-activity{
     margin-bottom: 5px;
     }
+    .h2-activity{
+        font-size: 26px;
+        margin-left: 60px;
+    }
     h3{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
      }
     .legend-activity{
@@ -1381,61 +1418,63 @@ h3{
     border: solid 1px white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
-    width: 332px;
+    width: 352px;
     height: 200px;
-    margin-left: 15px;
+    margin-left: 30px;
     margin-bottom: 20px;
     }
 /*photos*/
     .picture-port{
-       width: 330px;
+       width: 350px;
        height: 145px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
     }
     .picture-fort{
-       width: 330px;
+       width: 350px;
        height:145px ;
        border-radius: 15px 15px 0 0;
        justify-content: center;  
     }
     .picture-iles{
-       width: 330px;
+       width: 350px;
        height: 145px;
        border-radius: 15px 15px 0 0;
        justify-content: center;  
     }
     .picture-parcnat{
-       width: 330px;
+       width: 350px;
        height: 145px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
     }
     .picture-dame{
-       width: 330px;
+       width: 350px;
        height: 145px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
     }
     .picture-longchamp{
-       width: 330px;
+       width: 350px;
        height: 145px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
    }
 /*FOOTER*/
-/*pb d'emplacement causé par la hauteur de la section2*/
+/*pb d'emplacement causé par la hauteur de la section2: résolu*/
     .footer{
         width: 450px;
        height: auto;
        display: block;
        flex-direction: column;
        justify-content: center;
+       background: #f2f2f2;
        margin-top: 30px;
     }
     .blocks-footer{
        display: block;
        flex-direction: column;
+       margin-left: 30px;
      }
     .footer-block{
        padding: 0px 0px;
@@ -1473,7 +1512,7 @@ h3{
         width: 375px;    
     }
     .lien-1{
-        margin-left: 70px;
+        margin-left: 40px;
         margin-top: 0px;
     }
     .lien-2{
@@ -1483,7 +1522,7 @@ h3{
     .lien-3{
        margin-bottom: 70px;
        margin-right: 0px;
-       margin-left:250px ;
+       margin-left:0px ;
        font-weight: bold;
     }
     /*bordures mobile*/
@@ -1501,6 +1540,7 @@ h3{
      header{   
     width: 375px;
     height: auto;
+    margin-right: 15px;
      }
      .title {
         font-size: 24px;
@@ -1636,7 +1676,7 @@ h3{
       height:130px ;
       margin-top: 10px ;
       margin-bottom: 10px;
-      margin-left: 30px;/*pour centrer*/
+      margin-left: 10px;/*pour centrer*/
     }
     .stars5-pop{
         margin-top: 70px ;
@@ -1651,7 +1691,7 @@ h3{
     }
     .galerie-hebergements{
     padding: 5px 5px;
-    margin-left: 30px;/*centrer*/
+    margin-left: 20px;/*centrer*/
     margin-bottom: 10px;
     }
    .img-hebergements{
@@ -1696,6 +1736,10 @@ h3{
     .marg-activity{
     margin-bottom: 5px;
     }
+    .h2-activity{
+    font-size: 26px;
+    margin-left: 30px;
+    }
     h3{
     font-size: 20px;
     font-weight: bold;
@@ -1707,45 +1751,46 @@ h3{
     border: solid 1px white;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
-    width: 332px;
+    width: 322px;
     height: 200px;
-    margin-left: 15px;
+    margin-left: 0;
+    margin-right: 10px;
     margin-bottom: 20px;
     }
 /*photos*/
     .picture-port{
-       width: 330px;
-       height: 145px;
+       width: 320px;
+       height: 140px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
     }
     .picture-fort{
-       width: 330px;
-       height:145px ;
+       width: 320px;
+       height:140px ;
        border-radius: 15px 15px 0 0;
        justify-content: center;  
     }
     .picture-iles{
-       width: 330px;
-       height: 145px;
+       width: 320px;
+       height: 140px;
        border-radius: 15px 15px 0 0;
        justify-content: center;  
     }
     .picture-parcnat{
-       width: 330px;
-       height: 145px;
+       width: 320px;
+       height: 140px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
     }
     .picture-dame{
-       width: 330px;
-       height: 145px;
+       width: 320px;
+       height: 140px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
     }
     .picture-longchamp{
-       width: 330px;
-       height: 145px;
+       width: 320px;
+       height: 140px;
        border-radius: 15px 15px 0 0;
        justify-content: center;
    }
