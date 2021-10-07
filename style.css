@@ -1664,14 +1664,14 @@ h3{
        padding-right: 15px;
     } 
     .border-populaires{
-      width: 342px;
+      width: 332px;
       height:130px ;
       margin-top: 10px ;
       margin-bottom: 10px;
       margin-left: 20px;/*pour centrer*/
     }
     .stars5-pop{
-        margin-top: 50px ;
+        margin-top: 30px ;
     }
     .stars4-pop{
         margin-top: 30px;
@@ -1688,7 +1688,7 @@ h3{
     }
    .img-hebergements{
    width: 340px;
-   height: 120px;
+   height: 100px;
    }
    .border-hebergements{
    border: solid 1px #f2f2f2;
