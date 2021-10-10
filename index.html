@@ -24,11 +24,11 @@
             <img class="marg-logo size-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia">
         </div>
         <div class="size-liens flexaround">
-            <div class="size-border flexcentre border-nav-hover"><a class="blue decoration-none lien-1 line-mob-nav line-mob-hover"
-                    href="#section1">Hébergements</a>
+            <div class="size-border flexcentre border-nav-hover"><a
+                    class="blue decoration-none lien-1 line-mob-nav line-mob-hover" href="#hôtels">Hébergements</a>
             </div>
             <div class="size-border flexcentre border-nav23 border-nav-hover line-mob-2 line-mob-hover"><a
-                    class="black decoration-none lien-2" href="#section2">Activités</a>
+                    class="black decoration-none lien-2" href="#Activités">Activités</a>
             </div>
 
             <div class="size-border flexcentre border-nav23 border-nav-hover"><a class="blue decoration-none lien-3"
@@ -53,21 +53,26 @@
             </div>
 
             <div class="filter">
-                <h3>Filtres</h3>
+                <h2>Filtres</h2>
                 <ul class="filter ul">
-                    <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
-                        <h3>Economique</h3>
-                    </li>
-                    <li class="filter li text-hover"><i class="fas fa-child icon-filter icon-hover"></i>
-                        <h3>Familial</h3>
-                    </li>
-
-                    <li class="filter li text-hover"><i class="fas fa-heart icon-filter icon-hover"></i>
-                        <h3>Romantique</h3>
-                    </li>
-                    <li class="filter li text-hover filter-4"><i class="fas fa-dog icon-filter icon-hover"></i>
-                        <h3 class="filter-4">Animaux autorisés</h3>
-                    </li>
+                    <div class="filter ul">
+                        <!--div ajoutée pour responsive mobile-->
+                        <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
+                            <h3>Economique</h3>
+                        </li>
+                        <li class="filter li text-hover"><i class="fas fa-child icon-filter icon-hover"></i>
+                            <h3>Familial</h3>
+                        </li>
+                    </div>
+                    <div class="filter ul flex-column">
+                        <!-- div ajoutée pour responsive mobile-->
+                        <li class="filter li text-hover"><i class="fas fa-heart icon-filter icon-hover"></i>
+                            <h3>Romantique</h3>
+                        </li>
+                        <li class="filter li text-hover filter-4"><i class="fas fa-dog icon-filter icon-hover"></i>
+                            <h3>Animaux autorisés</h3>
+                        </li>
+                    </div>
                 </ul>
             </div>
 
@@ -79,20 +84,22 @@
             </div>
         </header>
 
-        <section1 class="map-hover flexbetween size-section1 section-1-mob" id="section1">
+        
+        <section class="map-hover flexbetween size-hebergements mob-heb" id="hôtels">
+            
             <!--ancre_ Hébergements-->
 
             <article class="galerie-hebergements">
-                <p>
+
                 <h2 class="legend-hebergements h2-hebergements">Hébergements à Marseille</h2>
-                </p>
 
                 <div class="hebergements bloc1">
                     <div class="border-hebergements">
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             alt="photo hébergement 1" />
-                        <div class="legend-hebergements-mob"><!--mobile-->
+                        <div class="legend-hebergements-mob">
+                            <!--mobile-->
                             <div class="legend-text">Auberge la Cannebière</div>
                             <div>Nuit à partir de<span class="legend-text">25€</span></div>
                             <div>
@@ -108,9 +115,10 @@
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             alt="photo hébergement 2" />
-                        <div class="legend-hebergements-mob"><!--mobile-->
+                        <div class="legend-hebergements-mob">
+                            <!--mobile-->
                             <div class="legend-text">Hotel du port</div>
-                            Nuit à partir de<span class="legend-text">52€</span></br>
+                            Nuit à partir de<span class="legend-text">52€</span><br>
                             <div>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -125,7 +133,7 @@
                             alt="photo hébergement 3" />
                         <div class="legend-hebergements-mob">
                             <div class="legend-text">Hôtel les Mouettes</div>
-                            Nuit à partir de <span class="legend-text">76€</span> </br>
+                            Nuit à partir de <span class="legend-text">76€</span> <br>
                             <div>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -142,9 +150,9 @@
                         <img class="img-hebergements"
                             src="src/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                             alt="photo hébergement 4" />
-                            <div class="legend-hebergements-mob">
+                        <div class="legend-hebergements-mob">
                             <div class="legend-text"> Hôtel de la mer </div>
-                            Nuit à partir de <span class="legend-text">46€</span></br>
+                            Nuit à partir de <span class="legend-text">46€</span><br>
                             <div>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -159,7 +167,7 @@
                             alt="photo hébergement 5" />
                         <div class="legend-hebergements-mob">
                             <div class="legend-text">Auberge le Pannier</div>
-                            Nuit à partir de <span class="legend-text">23€</span> </br>
+                            Nuit à partir de <span class="legend-text">23€</span> <br>
                             <div>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -175,7 +183,7 @@
                             alt="photo hébergement 6" />
                         <div class="legend-hebergements-mob">
                             <div class="legend-text">Hôtel Chez Amina</div>
-                            Nuit à partir de <span class="legend-text">96€</span></br>
+                            Nuit à partir de <span class="legend-text">96€</span><br>
                             <div>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -188,7 +196,8 @@
                 </div>
 
                 <div class="afficher">
-                    <p class="legend-text">Afficher plus </p>
+                    <p class="legend-text">Afficher plus
+                    <p>
                 </div>
             </article>
             <aside class="galerie-populaires">
@@ -196,7 +205,7 @@
                 <h2 class="icon-pop h2-pop">Les plus populaires<i class="fas fa-chart-line"></i>
                 </h2>
                 <!--icone-->
-                </p>
+                <p>
                 <div class="border-populaires">
                     <div> <img class="img-populaires"
                             src="src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -204,7 +213,7 @@
                     </div>
                     <div>
                         <div class="legend-text">Hôtel Le soleil du matin</div>
-                        Nuit à partir de <span class="legend-text">128€</span></br>
+                        Nuit à partir de <span class="legend-text">128€</span><br>
                         <div class="stars5-pop">
                             <i class="fas fa-star bluestars"></i>
                             <i class="fas fa-star bluestars"></i>
@@ -219,9 +228,9 @@
                             alt="photo-populaire2">
                     </div>
                     <div>
-                        <div class="legend-text">Au coeur de l'eau </br>
+                        <div class="legend-text">Au coeur de l'eau <br>
                             Chambres d'hôtes </div>
-                        Nuit à partir de <span class="legend-text">71€</span></br>
+                        Nuit à partir de <span class="legend-text">71€</span><br>
                         <div class="stars4-pop">
                             <i class="fas fa-star bluestars"></i>
                             <i class="fas fa-star bluestars"></i>
@@ -236,9 +245,9 @@
                             src="src/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                             alt="photo-populaire3"></div>
                     <div>
-                        <div class="legend-text">Hôtel Tout bleu et </br>
+                        <div class="legend-text">Hôtel Tout bleu et <br>
                             Blanc </div>
-                        Nuit à partir de <span class="legend-text">68€</span></br>
+                        Nuit à partir de <span class="legend-text">68€</span><br>
                         <div class="stars4-pop">
                             <i class="fas fa-star bluestars"></i>
                             <i class="fas fa-star bluestars"></i>
@@ -249,11 +258,11 @@
                     </div>
                 </div>
             </aside>
-        </section1>
-        
-        <section2 class="activity map-hover" id="section2">
+        </section>
+
+        <section class="activity map-hover" id="Activités">
             <!--ancre-->
-            <h2 id="Activités" class="h2-activity">Activités à Marseille</h2>
+            <h2 class="h2-activity">Activités à Marseille</h2>
             <div class=" flexbetween galerie-activity">
 
                 <div class="border-activity border-activity-mob">
@@ -312,7 +321,7 @@
                     </div>
                 </div>
             </div>
-        </section2>
+        </section>
     </main>
 
     <footer class="footer">
@@ -337,4 +346,5 @@
     </footer>
 
 </body>
+
 </html>
