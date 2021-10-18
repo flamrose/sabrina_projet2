@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"><!-- choix d'une langue-->
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Communique avec le fichier css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -12,16 +12,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');/*police en ligne*/
     </style>
     <title>Reservia</title>
 </head>
 
-<body class="html-body">
-
-    <nav class="body flexbetween size-nav">
+<body class="html-body"> <!--<body> Contient toute la page-->
+<!--NAVIGATION DU MENU-->
+    <nav class="body flexbetween size-nav"> <!-- 1 logo et 3 liens -->
         <div>
-            <img class="marg-logo size-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia">
+            <img class="marg-logo size-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia"> <!--fichier SRC logo-->
         </div>
         <div class="size-liens flexaround">
             <div class="size-border flexcentre border-nav-hover"><a
@@ -37,12 +37,13 @@
             </div>
         </div>
     </nav>
-
+<!--LE CONTENU DES ELEMENTS PRINCIPAUX DANS LA BALISE MAIN-->
     <main class="body">
+<!--A/ ENTETE-->        
         <header class="header">
             <h1>Trouvez votre hébergement <span class="wrap">pour des vacances de rêve</span></h1>
             <p>En plein centre ville ou en pleine nature</p>
-
+<!--A1 : Navigation de recherche-->
             <div class="flexcentre bordersearch button-mob">
 
                 <div class="backgris flexcentre icon-localisation"><i class="fas fa-map-marker-alt"></i></div>
@@ -50,13 +51,13 @@
                         value="Marseille, France" />
                 </div>
                 <div class="backblue flexcentre button"><span class="word-none">Rechercher</span> <span><i
-                            class="fas fa-search icon-search"></i></span></div>
+                            class="fas fa-search icon-search"></i></span></div><!--icône version mobile-->
             </div>
-
+<!--A2 : Filtres crées dans une liste composée de 4 éléments-->
             <div class="filter">
-                <h3>Filtres</h3>
+                <h3 class="title-filter">Filtres</h3>
                 <ul class="filter ul">
-                    <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i>
+                    <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i> <!--Les icônes importés de fontawesome en ligne-->
                         <h3>Economique</h3>
                     </li>
                     <li class="filter li text-hover"><i class="fas fa-child icon-filter icon-hover"></i>
@@ -69,9 +70,8 @@
                         <h3>Animaux autorisés</h3>
                     </li>
                 </ul>
-
             </div>
-
+<!--A3 : POINT INFORMATION-->
             <div class="info">
                 <div class="border-icon-info"><i class="fas fa-info fa-xs blue flexcentre"></i></div>
                 <div>
@@ -79,24 +79,24 @@
                 </div>
             </div>
         </header>
-        <section class="map-hover flexbetween size-hebergements mob-hebergements" id="Hébergements">
-            <!--ancre_ Hébergements-->
-
+<!--B/ SECTION 1 : LES HEBERGEMENTS ET LES PLUS POPULAIRES-->        
+        <section class="map-hover flexbetween size-hebergements mob-hebergements" id="Hébergements"><!--ancre-->
+<!--B1 : LES HEBERGEMENTS CONTENUS DANS ARTICLE-->
             <article class="galerie-hebergements">
 
                 <h2 class="legend-hebergements h2-hebergements">Hébergements à Marseille</h2>
 
                 <div class="hebergements bloc1">
                     <div class="border-hebergements">
-                        <img class="img-hebergements"
-                            src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                            alt="photo hébergement 1" />
-                        <div class="legend-hebergements-mob">
-                            <!--mobile-->
+                        <img class="img-hebergements" 
+                            src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                            alt="photo hébergement 1" />                            <!-- PHOTOS DU FICHIER SRC HEBERGEMENTS small-->
+                        <div class="legend-hebergements-mob"> <!--version mobile-->
+
                             <div class="legend-text">Auberge la Cannebière</div>
                             <div>Nuit à partir de<span class="legend-text">25€</span></div>
                             <div>
-                                <i class="fas fa-star bluestars"></i>
+                                <i class="fas fa-star bluestars"></i> <!--icônes importées-->
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -109,7 +109,7 @@
                             src="src/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                             alt="photo hébergement 2" />
                         <div class="legend-hebergements-mob">
-                            <!--mobile-->
+            
                             <div class="legend-text">Hotel du port</div>
                             Nuit à partir de<span class="legend-text">52€</span><br>
                             <div>
@@ -145,7 +145,7 @@
                             alt="photo hébergement 4" />
                         <div class="legend-hebergements-mob">
                             <div class="legend-text"> Hôtel de la mer </div>
-                            Nuit à partir de <span class="legend-text">46€</span><br>
+                            Nuit à partir de <span class="legend-text">46€</span><br> <!--balise orpheline-->
                             <div>
                                 <i class="fas fa-star bluestars"></i>
                                 <i class="fas fa-star bluestars"></i>
@@ -193,16 +193,15 @@
                     <p>
                 </div>
             </article>
+<!--B2 : LES PLUS POPULAIRES CONTENUS DANS ASIDE-->            
             <aside class="galerie-populaires">
-                <p>
-                <h2 class="icon-pop h2-pop">Les plus populaires<i class="fas fa-chart-line"></i>
-                </h2>
-                <!--icone-->
-                <p>
+                
+                <h2 class="icon-pop h2-pop">Les plus populaires<i class="fas fa-chart-line"></i> <!--icône-->
+                </h2> 
                 <div class="border-populaires">
                     <div> <img class="img-populaires"
                             src="src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="photo-populaire1">
+                            alt="photo-populaire1">  <!--PHOTOS DU FICHIER SRC HEBERGEMENTS small-->
                     </div>
                     <div>
                         <div class="legend-text">Hôtel Le soleil du matin</div>
@@ -252,11 +251,11 @@
                 </div>
             </aside>
         </section>
+<!--C/ SECTION 2 : LES ACTIVITES A MARSEILLE-->
+        <section class="activity map-hover" id="Activités"> <!--ancre-->
 
-        <section class="activity map-hover" id="Activités">
-            <!--ancre-->
             <h2 class="h2-activity">Activités à Marseille</h2>
-            <div class=" flexbetween galerie-activity">
+            <div class=" flexbetween galerie-activity">   <!--PHOTOS DU FICHIER SRC ACTIVITES medium-->
 
                 <div class="border-activity border-activity-mob">
                     <div> <img class="picture-port"
@@ -316,7 +315,7 @@
             </div>
         </section>
     </main>
-
+<!--FOOTER composé de 3 éléménts h3 et leurs liens-->
     <footer class="footer">
         <div class="blocks-footer">
             <div class="footer-block">
@@ -339,5 +338,4 @@
     </footer>
 
 </body>
-
 </html>

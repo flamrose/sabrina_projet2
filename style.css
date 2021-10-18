@@ -1,4 +1,4 @@
-@font-face
+@font-face /*Police imposéé*/
  {
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'
     );
@@ -6,7 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*GENERAL*/
+/* GENERALITE SUR LE BODY*/
 .htmlbody{
     font-family:'raleway';
 }
@@ -14,9 +14,9 @@ body{
     width: 1050px;
     height: auto;
     margin: auto;
-    /*agent stylesheet*/
+    /* Attention agent stylesheet*/
 }
-/* FLEXBOX*/
+/* MISE EN PAGE AVEC FLEXBOX*/
 .flexcentre{
     display: flex;
     justify-content: center;
@@ -32,15 +32,11 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.flex-end{
-    display: flex;
-    justify-content: flex-end;
-}
-/*TEXT*/
+/*TEXTE*/
 .legend-text{
     font-weight: bold;
 }
-/*COLOR*/
+/*COULEURS*/
 .blue{
     color: #0065fc;
 }
@@ -97,15 +93,17 @@ border-top: solid 1px #0065fc ;
     border-top: solid 1px #0065fc;
     cursor: pointer;
 }
-/*HEADER*/
+/* A/  HEADER*/
+/*Mise en page : bordures, couleurs, largeurs, hauteurs*/
 
-/*LOCALISATION*/
+/*A1 : NAVIGATION DE RECHERCHE*/
+/*Localisation*/
 .icon-localisation{
     width: 50px;
     height: 50px;
     border-radius: 10px 0 0 10px;
 }
-/*Navigation de recherche*/
+/*Barre de recherche*/
 .bordersearch{
     width: 400px;
     border-radius: 10px;
@@ -135,7 +133,7 @@ border-top: solid 1px #0065fc ;
 .icon-search{
     color: #0065fc;
 }
-/*FILTRES*/
+/*A2 : FILTRES*/
 .filter{
     display: inline-flex;
 }
@@ -172,7 +170,7 @@ border-top: solid 1px #0065fc ;
     color: white;
     background-color: #0065fc;
 }
-/*POINT INFORMATION*/
+/*A3 : POINT INFORMATION*/
 .info{
     display: flex;
     align-items: center;
@@ -185,7 +183,7 @@ border-top: solid 1px #0065fc ;
     padding-left: 10px;
     margin-right: 10px;
 }
-/*SECTION 1 : LES HEBERGEMENTS ET LES PLUS POPULAIRES*/
+/*B/ SECTION 1 : LES HEBERGEMENTS ET LES PLUS POPULAIRES*/
     article{
         width: 60%;
         height: auto;
@@ -202,7 +200,7 @@ border-top: solid 1px #0065fc ;
         padding: 0 20px;
         margin-left: 0px;
     }
-/*LES HEBERGEMENTS*/
+/*B1 : LES HEBERGEMENTS CONTENUS DANS ARTICLE*/
 .img-hebergements{
     width: 100%;
     height: 90px;
@@ -216,7 +214,7 @@ border-top: solid 1px #0065fc ;
     height: 35%;  
     margin: 0 10px;
 }
-/*Flex*/
+/* Utilisation de Flex*/
 .hebergements{ 
     display:flex; 
     justify-content: space-around; 
@@ -248,7 +246,8 @@ border-top: solid 1px #0065fc ;
 .stars4{
     margin-top: 50px;
 }
-/*LES PLUS POPULAIRES*/
+/*B2 : LES PLUS POPULAIRES CONTENUS DANS ASIDE*/
+/*Icône*/
 .icon-pop{
     display: flex;
     justify-content: space-between;
@@ -277,7 +276,7 @@ border-top: solid 1px #0065fc ;
 .stars4-pop{
     margin-top: 20px;
 }
-/* SECTION 2: LES ACTIVITES*/
+/* C/ SECTION 2: LES ACTIVITES*/
 .galerie-activity{
     height: 400px;
     margin: 60px 0;
@@ -287,7 +286,7 @@ border-top: solid 1px #0065fc ;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
-/*Texte*/
+/* Légende et Texte*/
 h3{
     font-size: 18px;
     font-weight: bold;
@@ -301,7 +300,7 @@ h3{
 .legend-activity{
     padding-left: 15px;
 }
-/*flex*/
+/*Flex*/
 .flex-activity{ 
     display:block;
     justify-content: center;
@@ -343,6 +342,7 @@ h3{
     cursor: pointer;
 }
 /*FOOTER*/
+/*Créer avec flexbox*/
 .footer{
     width: 100%;
     height: auto;
@@ -708,8 +708,7 @@ h3{
     aside{
        width: 30%;
        padding: 0 5px;
-       margin-right: 10px;
-       
+       margin-right: 10px;  
     }
      /*LES HEBERGEMENTS*/
      .img-hebergements{
@@ -882,7 +881,7 @@ h3{
         justify-content: flex-start;
         align-items: flex-start;
          }
-    /*FILTRES*/
+    /*Filtres*/
     .filter h3{
         font-size: 14px;
         display: inline-block;
@@ -1084,7 +1083,7 @@ h3{
         font-size: 16px;
         white-space: nowrap;
     }
-   /*nav de recherche*/   
+   /*Navigation de recherche*/   
    .border-search{ 
        display: flex;
     }
@@ -1102,7 +1101,6 @@ h3{
     align-items: flex-start;
      }
    /*FILTRES*/
-   
    .filter h3{
        font-size: 10px;
        display: inline;
@@ -1278,7 +1276,7 @@ h3{
     }
 }
 @media screen and (max-width : 450px){
-    /*GENERAL*/
+    /*GENERALITE*/
     .html-body{
         font-size: large;
     }
@@ -1302,7 +1300,7 @@ h3{
         width: 30%;
         height: auto;
     }
-    /*Menu et bordure du menu*/
+    /*Navigation et liens du menu avec Flexbox*/
     .size-nav{
         width: 90%;
         height: auto;
@@ -1326,7 +1324,7 @@ h3{
        margin-left:0;
        font-weight: bold;
     }
-    /*bordures mobile*/
+    /*bordures de la navigation en mobile*/
     .size-border{
         display: flex;
         flex-direction: column-reverse;
@@ -1368,13 +1366,13 @@ h3{
      p {
      white-space: nowrap;
      }
-    /*LOCALISATION*/
+    /*A1 : LOCALISATION DE RECHERCHE*/
       .icon-localisation{
     width: 50px;
     height: 50px;
     border-radius: 10px 0 0 10px;
      }
-   /*NAVIGATION DE RECHERCHE*/
+   /* BARRE DE RECHERCHE*/
    .bordersearch{
        width: 370px;
        border-radius: 10px;
@@ -1387,6 +1385,7 @@ h3{
        color: black;
        font-weight: bold;
     }
+    /*BOUTON DE RECHERCHE*/
    .button{
    width: 50px;
    height: 50px;
@@ -1398,16 +1397,14 @@ h3{
        color: #0065fc;
        overflow: hidden;
     } 
-   .icon-search{
+   .icon-search{ /* l'iône remplace le texte*/
        color: white;
        padding-right: 15px;  
     }
-  /*FILTRES*/
-    
-      /* bordure des filtres*/  
+  /* A2 :FILTRES*/
     .filter{
         display: inline-block; /*s'applique sur h3 Filtres et le place en colonne*/
-    }
+    } /*respecte les bordures des filtres et leur volume*/
     .filter h3 {
        font-size: 24px;
        display: inline;
@@ -1445,15 +1442,11 @@ h3{
     h2{
         font-size: 26px;
     }
-  /*POINT INFORMATION*/
-    .bordericon-info{
-       border-radius: 35px;
+  /* A3 : POINT INFORMATION*/
+    .border-icon-info{
+       border-radius: 30px;
        margin-right: 10px;
-       margin-bottom: 20px;
-    }
-    .wrap{
-        display: flex;
-        white-space: pre-wrap;
+       margin-bottom: 5px;/*pour aligner avec le texte*/
     }
  /*SECTION 1*/
     .size-hebergements{
@@ -1461,7 +1454,7 @@ h3{
         height: auto;
         margin:auto ; 
     }
-    .mob-hebergements {
+    .mob-hebergements { /*FLEX*/
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -1497,15 +1490,14 @@ h3{
       height:30% ;
       margin-top: 10px ;
       margin-bottom: 10px;
-       /*pour centrer*/
-       margin-left: 10%;
+      margin-left: 10%; /*POUR CENTRER*/
     }
     .h2-pop{
         font-size: 26px;
         margin-left: 10%;
     }
     .icon-pop{
-        margin-right: 0p;
+        margin-right: 10px;
     }
     .stars5-pop{
         margin-top: 50px ;
@@ -1519,9 +1511,8 @@ h3{
     flex-direction: column;
     }
     .galerie-hebergements{
-    /* Pour centrer*/
     margin-bottom: 10px;
-    margin-left: 20%;
+    margin-left: 20%; /*POUR CENTRER*/
     }
    .img-hebergements{
    width: 355px;
@@ -1562,7 +1553,7 @@ h3{
      justify-content: center;
      width: 100%;
      height: auto;
-     margin-left: 15%; /*Pour centrer*/
+     margin-left: 15%; /*POUR CENTRER*/
      }
     .marg-left{
     margin-left: 0px;
@@ -1661,27 +1652,28 @@ h3{
     
     /*Logo*/
     .marg-logo{
-        margin-left: 10%;
+        margin-left: 5%;
         margin-bottom: 60px;
     }
     .size-logo{
         width: 30%;
         height: auto;
     }
-    /*Menu et bordure du menu*/
+    /*Navigation et liens du menu*/
     .size-nav{
         width: 90%;
-        height: auto;
+        height: 80px; /*réduire l'espace avec le titre*/
+        margin-top: 15px;
     }
     .size-liens{
         display: flex;   
     }
     .lien-1{
         margin-right: 370px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;/* pour descendre, diminuer px*/
     }
     .lien-2{
-        margin-top: 0px;
+        margin-top: 15px;/* pour descendre, augmenter px*/
         margin-left: 0px; 
     }
     .lien-3{
@@ -1690,7 +1682,7 @@ h3{
        margin-left:50px ;
        font-weight: bold;
     }
-    /*bordures mobile*/
+    /*bordures de navigation pour mobile*/
     .size-border{
         border: none;
     }
@@ -1703,20 +1695,22 @@ h3{
     /*HOVER*/
     .line-mob-nav{
         border-bottom: solid 2px #f2f2f2;
+        height: 35px;
     }
     .line-mob-2{
         border-bottom: solid 2px #f2f2f2;
-        height: 35px;
+        height: 40px;
     }
     .line-mob-hover:hover{
         border-bottom: #0065fc solid 2px;
+        height: 35px;
     }
        
    /*HEADER*/ 
      header{   
     width: 100%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 2%;
      }
      .title {
         font-size: 24px;
@@ -1735,7 +1729,8 @@ h3{
    .bordersearch{
        width: 300px;
        border-radius: 10px;
-       border: 0.5px solid #f2f2f2;   
+       border: 0.5px solid #f2f2f2; 
+       margin-bottom: 10%;  
     }
     .text-search{
        width: 200px;
@@ -1766,7 +1761,7 @@ h3{
        display: inline-block;
    }
    .filter h3 {
-       font-size: 18px;
+       font-size: 20px;
        display: inline;
        flex-direction:column;
        align-items: flex-start;
@@ -1800,6 +1795,9 @@ h3{
     }
     .filter-4{
         display: block;
+    }
+    .title-filter{
+        margin-left: 5%;
     }
     
   /*POINT INFORMATION*/
@@ -1849,14 +1847,14 @@ h3{
       height:30% ;
       margin-top: 10px ;
       margin-bottom: 10px;
-      margin-left: 5%;/*pour centrer*/
+      margin-left: 3%;/*POUR CENTRER*/
     }
     .h2-pop{
         font-size: 26px;
         margin-left: 7%;
     }
     .icon-pop{
-        margin-right: 0;
+        margin-right: 5%;
     }
     .stars5-pop{
         margin-top: 30px ;
@@ -1871,7 +1869,7 @@ h3{
     }
     .galerie-hebergements{
     padding: 0 0;
-    margin-left: 15%;/*centrer*/
+    margin-left: 3%;/*POUR CENTRER*/
     margin-bottom: 10px;
     }
    .img-hebergements{
@@ -1913,7 +1911,7 @@ h3{
      justify-content: center;
      width: 100%;
      height: auto;
-     margin-left: 10%;
+     margin-left: 3%; /*POUR CENTRER*/
      }
     .marg-left{
     margin-left: 0px;
@@ -1923,7 +1921,7 @@ h3{
     }
     .h2-activity{
     font-size: 26px;
-    margin-left: 40px;
+    margin-left: 1px;
     }
     h3{
     font-size: 22px;
@@ -1982,21 +1980,26 @@ h3{
 /*FOOTER*/
 /*pb d'emplacement causé par la hauteur de la section2*/
     .footer{
+       width: 100%;
        height: auto;
        display: block;
        flex-direction: column;
        justify-content: center;
        margin-top: 30px;
        background:#f2f2f2;
+       background-size: 100%;
     }
     .blocks-footer{
        display: block;
        flex-direction: column;
-       margin-left: 10%;
+       margin-left: 1%; /* POUR CENTRER ET REGLE LE PB DU BACKGROUND COLOR*/
+       background-color: #f2f2f2;
      }
     .footer-block{
        padding: 20px 20px;
+       background-color: #f2f2f2;
     }
+    
 }
 
 
