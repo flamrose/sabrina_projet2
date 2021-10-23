@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Reconnaître la version 5 du HTML-->
 <html lang="fr"><!-- choix d'une langue-->
 
-<head>
-    <meta charset="utf-8" />
+<head> <!--titre et encodage = caractères spéciaux-->
+    <meta charset="utf-8" /><!--encodage de toutes les langues-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Communique avec le fichier css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');/*police en ligne*/
     </style>
-    <title>Reservia</title>
+    <title>Reservia</title> <!--moins de 100 caractères-->
 </head>
 
-<body class="html-body"> <!--<body> Contient toute la page-->
+<body class="html-body"> <!-- Balise body Contient toute la page : nav, main, footer, section, article, aside= balises sémentiques-->
+    <!--balises sémentiques:sens et indication du contenu, plus accessible-->
+
 <!--NAVIGATION DU MENU-->
     <nav class="body flexbetween size-nav"> <!-- 1 logo et 3 liens -->
         <div>
-            <img class="marg-logo size-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia"> <!--fichier SRC logo-->
+            <img class="marg-logo size-logo" src="src/logo/Reservia@3x.png" alt="Logo Reservia"> <!--DOSSIER SRC logo-->
         </div>
         <div class="size-liens flexaround">
             <div class="size-border flexcentre border-nav-hover"><a
@@ -53,11 +55,11 @@
                 <div class="backblue flexcentre button"><span class="word-none">Rechercher</span> <span><i
                             class="fas fa-search icon-search"></i></span></div><!--icône version mobile-->
             </div>
-<!--A2 : Filtres crées dans une liste composée de 4 éléments-->
+<!--A2 : Filtres crées dans une liste, balise ul composée de 4 li et 4 icônes-->
             <div class="filter">
                 <h3 class="title-filter">Filtres</h3>
                 <ul class="filter ul">
-                    <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i> <!--Les icônes importés de fontawesome en ligne-->
+                    <li class="filter li text-hover"><i class="fas fa-money-bill-wave icon-filter icon-hover"></i> <!--Les ICÔNES importés de FONTAWESOM en ligne-->
                         <h3>Economique</h3>
                     </li>
                     <li class="filter li text-hover"><i class="fas fa-child icon-filter icon-hover"></i>
@@ -90,7 +92,7 @@
                     <div class="border-hebergements">
                         <img class="img-hebergements" 
                             src="src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
-                            alt="photo hébergement 1" />                            <!-- PHOTOS DU FICHIER SRC HEBERGEMENTS small-->
+                            alt="photo hébergement 1" />                            <!-- PHOTOS DU DOSSIER SRC HEBERGEMENTS small-->
                         <div class="legend-hebergements-mob"> <!--version mobile-->
 
                             <div class="legend-text">Auberge la Cannebière</div>
@@ -201,7 +203,7 @@
                 <div class="border-populaires">
                     <div> <img class="img-populaires"
                             src="src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="photo-populaire1">  <!--PHOTOS DU FICHIER SRC HEBERGEMENTS small-->
+                            alt="photo-populaire1">  <!--PHOTOS DU DOSSIER SRC HEBERGEMENTS small-->
                     </div>
                     <div>
                         <div class="legend-text">Hôtel Le soleil du matin</div>
@@ -255,7 +257,7 @@
         <section class="activity map-hover" id="Activités"> <!--ancre-->
 
             <h2 class="h2-activity">Activités à Marseille</h2>
-            <div class=" flexbetween galerie-activity">   <!--PHOTOS DU FICHIER SRC ACTIVITES medium-->
+            <div class=" flexbetween galerie-activity">   <!--PHOTOS DU DOSSIER SRC ACTIVITES medium-->
 
                 <div class="border-activity border-activity-mob">
                     <div> <img class="picture-port"
@@ -315,7 +317,7 @@
             </div>
         </section>
     </main>
-<!--FOOTER composé de 3 éléménts h3 et leurs liens-->
+<!--FOOTER composé de 3 éléménts DIV h3 et leurs liens-->
     <footer class="footer">
         <div class="blocks-footer">
             <div class="footer-block">
